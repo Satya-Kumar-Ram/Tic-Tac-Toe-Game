@@ -80,7 +80,8 @@ def winner_img_user(name):
              ____
            _(____)_
 _______ooO_(_o__o_)_Ooo________
-           {name} WON
+           
+           {name} WON!!
 
 ╚══OF══THE══GAME═══.✵.════════╝
 '''
@@ -93,7 +94,8 @@ def winner_img_com(name):
            ||""||
            ||__||
 ___________[ -=.]`0____________
-          {name} WON
+          
+          {name} WON!!
 
 ╚══OF══THE══GAME═══.✵.════════╝
 '''
