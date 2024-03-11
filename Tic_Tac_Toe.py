@@ -1,4 +1,4 @@
-import random,os,time
+import random
 
 # Function to display a welcome message
 def welcome():
