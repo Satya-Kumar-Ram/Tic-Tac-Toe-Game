@@ -225,7 +225,6 @@ def Single_main():
     for i in range(9):
         if i%2==0:
             index = take_input(player_one)
-            print(index)
             sign_dictionary[index] = 'X'
         else:
             index = take_input_COM()
