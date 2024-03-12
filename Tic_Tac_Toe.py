@@ -74,6 +74,7 @@ def take_input_COM():
             return x
         print("Please enter number between 1-9")
 
+#Function to display user won in fancy text
 def winner_img_user(name):
     u = f'''
 ╔═.✵.═════JUDGEMENT═══TIME════╗
@@ -87,6 +88,7 @@ _______ooO_(_o__o_)_Ooo________
 '''
     print(u)
 
+#Function to display computer won in fancy text
 def winner_img_com(name):
     c = f'''
 ╔═.✵.═════JUDGEMENT═══TIME════╗
@@ -101,6 +103,7 @@ ___________[ -=.]`0____________
 '''
     print(c)
 
+#Function to display the match is tie
 def tie_img():
     tie ='''
 ╔═.✵.═════JUDGEMENT═══TIME════╗
@@ -115,6 +118,7 @@ ______,--._(___-___)_,--.______
 '''
     print(tie)
 
+#Function to display user input is invalid
 def invalid_img():
     invalid ='''
 +-----------------------------+
@@ -127,7 +131,7 @@ def invalid_img():
     print(invalid)
 
 
-# Function to calculate the result of the game       
+# Function to calculate the result of the game for single player mode      
 def calculate_result_s(player_one,player_two):
     thank = """
 +--------------------------------+
@@ -156,6 +160,7 @@ def calculate_result_s(player_one,player_two):
         winner_img_com(player_two)
         quit(thank)
 
+# Function to calculate the result of the game for multi player mode 
 def calculate_result_m(player_one,player_two):
      thank = """
 +--------------------------------+
@@ -183,9 +188,9 @@ def calculate_result_m(player_one,player_two):
         winner_img_user(player_two)
         quit(thank)
 
-#Main function for Single Player Mode
+# Main function for Single Player Mode
 def Single_main():
-    instructions = f"""
+    instructions = """
 +------------------------------------------------------------------------+
 |                   THIS WILL BE OUR TIC TAC TOE GAME                    |
 |                                                                        |
@@ -231,7 +236,7 @@ def Single_main():
     tie_img()
 
 
-#Main function for Multi Player Mode
+# Main function for Multi Player Mode
 def Multi_main():
 
     player1 = input("Enter First Player Username: ")
@@ -240,7 +245,7 @@ def Multi_main():
     player_two = player2.upper()
     print(f"\n✧ Thank you for joining {player_one} and {player_two} ✧")
 
-    instructions1 = f"""
+    instructions1 = """
 +------------------------------------------------------------------------+
 |                   THIS WILL BE OUR TIC TAC TOE GAME                    |
 |                                                                        |
@@ -293,5 +298,5 @@ def main():
             
    
          
-#Running thr main function     
+#Running the main function     
 main()
